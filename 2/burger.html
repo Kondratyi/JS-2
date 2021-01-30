@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Hamburger {
+        constructor(size, stuffing, topping = '') {
+            this.size = size.option;
+            this.stuffing = stuffing.option;
+            this.topping = topping.option;
+    
+            this.getSize();
+            this.getStuffing();
+            this.getToppings();
+        }
+        //addTopping(topping) { // Добавить добавку }
+        //removeTopping(topping) { // Убрать добавку }
+        getToppings() {
+            this.topping = [
+            {option: "spice", price: 15, callories: 0},
+            {option: "mayonnaise", price: 20, callories: 5},
+            ];
+        }
+        getSize() {
+            this.size = [
+                {option: "big", price: 50, callories: 20},
+                {option: "small", price: 100, callories: 40},
+            ];
+        }
+        getStuffing() {
+            this.stuffing = [
+                {option: "cheese", price: 10, callories: 20},
+                {option: "salad", price: 20, callories: 5},
+                {option: "potato", price: 15, callories: 10},
+            ];
+        }
+        //calculatePrice() { // Узнать цену }
+        //calculateCalories() { // Узнать калорийность }
+        }
+        new Hamburger("big", "salad")
+    </script>
+</body>
+</html>
